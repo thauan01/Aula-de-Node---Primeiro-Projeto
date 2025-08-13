@@ -1,0 +1,21 @@
+{
+  "name": "calculadora-media-aluno",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "calculadora",
+    "media",
+    "notas",
+    "console"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "Aplicação console para calcular média de notas de alunos",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
