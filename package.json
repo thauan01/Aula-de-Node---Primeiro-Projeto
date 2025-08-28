@@ -1,6 +1,7 @@
 {
   "name": "calculadora-media-aluno",
   "version": "1.0.0",
+  "type": "module",
   "main": "src/main.js",
   "scripts": {
     "start": "node src/main.js",
