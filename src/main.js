@@ -1,25 +1,11 @@
 import readline from 'readline';
-// import Aluno from './Aluno.js';
+import Aluno from './Aluno.js';
 
 // Criar interface para entrada do usuário
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
-// export default class Aluno{
-//     constructor(nome) {
-//         this.nome = nome;
-//         this.notas = [];
-//     }
-
-
-//     adicionarNota(nota) {
-//         this.notas.push(parseFloat(nota));
-//         console.log("Nota adicionada com sucesso!");
-//     }
-// }
-
 
 
 // Função para fazer uma pergunta ao usuário
@@ -42,8 +28,8 @@ async function calcularMedia() {
     console.log("=== CALCULADORA DE MÉDIA DE NOTAS ===\n");
     
     try {
-        // const nomeAluno = await pergunta("Digite o nome do aluno: ");
-        // const aluno = new Aluno(nomeAluno);
+        const nomeAluno = await pergunta("Digite o nome do aluno: ");
+        const aluno = new Aluno(nomeAluno);
         
 
         // Pedir quantidade de notas
@@ -66,7 +52,7 @@ async function calcularMedia() {
                 const notaStr = await pergunta(`Digite a ${i}ª nota (0-10): `);
                 
                 if (validarNota(notaStr)) {
-                    //aluno.adicionarNota(notaStr);
+                    aluno.adicionarNota(notaStr);
                     notaValida = true;
                 } else {
                     console.log("Nota inválida! Digite um número entre 0 e 10.");
